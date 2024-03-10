@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        img{
+            height: 40px;
+            border-radius: 10px;
+            box-shadow: 2px 1px 2px red;
+            cursor: pointer;
+        }
+        section{
+            background-image: url(bgimgl.jpg);
+            background-repeat: no-repeat;
+            background-size: 150vh;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+            padding: 10px 10px;
+            width: 140vh;
+            box-shadow: 3px 4px 4px darkturquoise inset;
+        }
+        section nav {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+        section nav ul{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            justify-content: space-evenly;
+            flex-wrap: nowrap;
+        }
+        section nav ul li a{
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 2em;
+            color: white;
+            -webkit-text-stroke: 0.4px rgb(68, 86, 8);
+            font-family: cursive;
+
+        }
+        section nav ul li a:hover{
+            font-size: 2.1em;
+        }
+        .section1{
+            box-shadow: 3px 4px 4px darkturquoise;
+            justify-content: center;
+            align-items: center;
+            height: 72vh;
+            padding: 10px 10px;
+            width: 140vh;
+            padding-right: 22px;
+            margin-left: 200px;
+            
+        }
+        .div{
+            margin-left: 50px;
+            color: white;
+            font-family: cursive;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        h1{
+            font-size: 2.3em;
+            -webkit-text-stroke: 0.7px yellowgreen;
+            font-weight: 700;
+        }
+        @keyframes anime {
+            0%{
+                left: 0;
+            }
+            50%{
+
+            }
+            100%{
+
+            }
+        }
+        h2 b{
+            color: rgb(150, 34, 34);
+        }
+        .div3 img{
+            height: 200px;
+            margin-top: 50px;
+        }
+        @media screen and (min-width:270px) and (max-width:932px) {
+            section{
+                height: 70vh;
+                padding: 2px 5pxpx;
+                width: 40vh;
+                padding-bottom: 10px;
+                box-shadow: 3px 4px 4px darkturquoise inset;
+                margin-left: 0px;
+            }
+            .section1{
+                box-shadow: 1px 2px 2px darkturquoise;
+                justify-content: center;
+                align-items: center;
+                height: 73vh;
+                padding: 3px 5px;
+                width: 40vh;
+                padding-right: 12px;
+                margin-left: 10px;
+                
+            }
+            img{
+                height: 20px;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-top: 12px;
+                box-shadow: 2px 1px 2px red;
+            }
+            h1{
+                font-size: 1em;
+                -webkit-text-stroke: 0.4px yellowgreen;
+                font-weight: 300;
+            }
+        section nav ul li a{
+            text-decoration: none;
+            margin-right: 5px;
+            font-size: 1em;
+            color: white;
+            -webkit-text-stroke: 0.2px rgb(68, 86, 8);
+            font-family: cursive;
+
+        }
+        section nav ul li a:hover{
+            font-size: 1.1em;
+        }
+        .div3 img{
+            height: 70px;
+            margin-top: 10px;
+        }
+            
+        .div{
+            margin-left: 5px;
+            color: white;
+            font-family: cursive;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    </style>
+</head>
+<body>
+    <section class="section1">
+        <section>
+            <nav>
+                <img src="mingma.jpeg.jpg" alt="Logo Not Found">
+                <ul>
+                    <li><a href="Homepage.html">Home</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+            <div class="div">
+                <div class="div2">
+                    <h2>Hey! </h2>
+                    <h2>It's me <b>Mingma Sherpa</b>.</h2>
+                    <h1>FRONT-END DEVELOPER</h1>
+                </div>
+                <div class="div3">
+                    <img src="gitlogo.jpg" alt="">
+                </div>
+            </div>
+        </section>
+    </section>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        #logo{
+            height: 40px;
+            border-radius: 10px;
+            box-shadow: 2px 1px 2px red;
+        }
+        section{
+            background-image: url(bgimgl.jpg);
+            background-repeat: no-repeat;
+            background-size: 150vh;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+            padding: 10px 10px;
+            width: 140vh;
+            box-shadow: 3px 4px 4px darkturquoise inset;
+        }
+        section nav {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+        section nav ul{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            justify-content: space-evenly;
+            flex-wrap: nowrap;
+        }
+        section nav ul li a{
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 2em;
+            color: white;
+            -webkit-text-stroke: 0.4px rgb(68, 86, 8);
+            font-family: cursive;
+
+        }
+        section nav ul li a:hover{
+            font-size: 2.1em;
+        }
+        .section1{
+            box-shadow: 3px 4px 4px darkturquoise;
+            justify-content: center;
+            align-items: center;
+            height: 72vh;
+            padding: 10px 10px;
+            width: 140vh;
+            padding-right: 22px;
+            margin-left: 200px;
+            
+        }
+        .div{
+            margin-left: 50px;
+            color: white;
+            font-family: cursive;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        h1{
+            font-size: 2.5em;
+            -webkit-text-stroke: 0.7px yellowgreen;
+            font-weight: 700;
+            align-items: center;
+            text-align: center;
+        }
+        p{
+            color: white;
+            font-family: cursive;
+            font-size: 1.2em;
+        }
+        .about{
+            margin-left: 100px;
+            text-align: center;
+        }
+        @media screen and (min-width:270px) and (max-width:932px) {
+            section{
+                height: 70vh;
+                padding: 2px 5pxpx;
+                width: 40vh;
+                padding-bottom: 10px;
+                box-shadow: 3px 4px 4px darkturquoise inset;
+                margin-left: 0px;
+            }
+            .section1{
+                box-shadow: 1px 2px 2px darkturquoise;
+                justify-content: center;
+                align-items: center;
+                height: 73vh;
+                padding: 3px 5px;
+                width: 40vh;
+                padding-right: 12px;
+                margin-left: 10px;
+                
+            }
+            #logo{
+                height: 17px;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-top: 12px;
+                box-shadow: 2px 1px 2px red;
+            }
+            h1{
+                font-size: 1em;
+                -webkit-text-stroke: 0.4px yellowgreen;
+                font-weight: 300;
+            }
+        section nav ul li a{
+            text-decoration: none;
+            margin-right: 5px;
+            font-size: 1em;
+            color: white;
+            -webkit-text-stroke: 0.2px rgb(68, 86, 8);
+            font-family: cursive;
+
+        }
+        section nav ul li a:hover{
+            font-size: 1.1em;
+        }
+        h1{
+            font-size: 1.5em;
+            -webkit-text-stroke: 0.5px yellowgreen;
+            font-weight: 300;
+            align-items: center;
+            text-align: center;
+        }
+        p{
+            color: white;
+            font-family: cursive;
+            font-size: 0.9em;
+        }
+        .about{
+            margin-left: 10px;
+            text-align: center;
+        }
+    }
+    </style>
+</head>
+<body>
+    <section class="section1">
+        <section>
+            <nav>
+                <img src="mingma.jpeg.jpg" alt="Logo Not Found" id="logo">
+                <ul>
+                    <li><a href="Homepage.html">Home</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+            <div class="about">
+                <h1>About</h1>
+                <p>Hello! My self Mingma Sherpa from Mangan, North Sikkim. <br> I'am 18 years old,  i'am Learning Full Stack Web  <br>Development and currently i'am Front-End Developer.</p>
+
+            </div>
+        </section>
+    </section>
+</body>
+</html>
