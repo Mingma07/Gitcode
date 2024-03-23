@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translator</title>
+    <style>
+        section{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: darkslateblue;
+            padding: 20px;
+            width: 700px;
+            margin-left: 300px;
+            font-family: cursive;
+            border-color: aqua;
+            border-style: double;
+            border-radius: 20px;
+            height: 90vh;
+        }
+        section textarea{
+            background-color: black;
+            color: white;
+            font-family: cursive;
+            border-radius: 20px;
+            padding: 30px;
+        }
+        h1{
+            color: white;
+        }
+        button{
+            color: white;
+            padding:5px 10px;
+            font-size: 1em;
+            font-family: cursive;
+            background-color: rgb(9, 85, 161);
+            border-color: aqua;
+            border-radius: 20px;
+        }
+        @media screen and (min-width:270px) and (max-width:900px) {
+            section{
+                margin-left: 10px;
+                width: 25vh;
+                height: 80vh;
+            }
+            section textarea{
+                width: 20vh;
+                padding: 10px;
+            }
+            h1{
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+            
+        <h1>Language Translator: Translate your text into any Language as you want.</h1>
+        <textarea name="text" id="text" cols="50" rows="10"></textarea>
+        <div id="google_translate_element"></div>
+        <button onclick="result()">Translate</button>
+        <p id="result"></p>
+    </section>
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+    function result(){
+        let text = document.getElementById('text').value;
+        document.getElementById('result').innerHTML = text;
+    }
+    </script>
+    
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </body>
+</html>
